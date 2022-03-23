@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 const TaskCard = ({ description, name, taskStatus, id,taskColor }) => {
 
     function onDragStart(e, targetId) {
-        console.log(targetId);
+        // console.log(targetId);
         e.dataTransfer.setData('text/plain', targetId)
     }
 

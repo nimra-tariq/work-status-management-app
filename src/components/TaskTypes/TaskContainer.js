@@ -13,7 +13,7 @@ const TaskContainer = ({ task, setTask }) => {
   function onDrop(e, taskStatus) {
     // console.log(taskType);
     let targetId = e.dataTransfer.getData('text')
-    console.log(targetId);
+    // console.log(targetId);
 
     setTask(
       task.map(item =>
