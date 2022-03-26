@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      <AddTaskForm task={task} setTask={setTask} />
-      <TaskContainer task={task} setTask={setTask}/>
+      <AddTaskForm setTask={setTask} />
+      <TaskContainer task={task} setTask={setTask} />
     </div>
   );
 }

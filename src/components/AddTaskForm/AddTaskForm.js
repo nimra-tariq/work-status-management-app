@@ -12,7 +12,7 @@ import {
 } from "@material-ui/core";
 import Select from '@mui/material/Select';
 
-const AddTaskForm = ({ task, setTask }) => {
+const AddTaskForm = ({ setTask }) => {
     const [taskStatus, setTaskStatus] = React.useState('completed');
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');
@@ -26,7 +26,7 @@ const AddTaskForm = ({ task, setTask }) => {
         event.preventDefault();
         setTaskId(taskId + 1);
         setTask(task => [...task, { name, description, taskStatus, taskId }]);
-        console.log(task);
+        // console.log(task);
         setName('');
         setDescription('');
     }
